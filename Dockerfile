@@ -1,7 +1,14 @@
 FROM alpine:latest
 
-RUN apk update && apk upgrade && \
-    apk add mtr net-tools curl wget jq nmap
+RUN apk --update --no-cache add \
+    mtr \
+    net-tools \
+    bind-tools \
+    curl \
+    wget \
+    jq \
+    nmap \
+    speedtest-cli
 
 COPY Dockerfile /Dockerfile
 LABEL org.label-schema.docker.dockerfile="/Dockerfile" \
