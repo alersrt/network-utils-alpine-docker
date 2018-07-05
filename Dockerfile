@@ -6,4 +6,4 @@ RUN apk update && apk upgrade \
 COPY Dockerfile /Dockerfile
 LABEL org.label-schema.docker.dockerfile="/Dockerfile" \
       org.label-schema.vcs-type="Git" \
-      org.label-schema.vcs-url="https://github.com/alersrt/network-utils-alpine-docke"
+      org.label-schema.vcs-url="https://github.com/alersrt/network-utils-alpine-docker"
