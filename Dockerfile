@@ -9,7 +9,8 @@ RUN apk --update --no-cache add \
     jq \
     nmap \
     speedtest-cli \
-    pwgen
+    pwgen \
+    openssl
 
 COPY Dockerfile /Dockerfile
 LABEL org.label-schema.docker.dockerfile="/Dockerfile" \
